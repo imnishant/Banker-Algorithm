@@ -108,6 +108,7 @@ public class banker
         for(int i=0 ; i<m ; i++)
             req[i] = sc.nextInt();
         request(p, req, need, available, allocation, m);
+	finish = new boolean[n];
         safeSequence(available, finish, need, allocation, n, m);
 
     }
